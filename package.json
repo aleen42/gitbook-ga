@@ -1,19 +1,10 @@
 {
     "name": "gitbook-plugin-ga",
-    "title": "Google Analytics",
-    "description": "Track page views of your book into Google Analytics",
+    "description": "Google Analytics tracking for your gitbook",
     "main": "index.js",
-    "icon": "./icon.png",
-    "browser": "./_assets/plugin.js",
     "version": "2.0.0",
     "engines": {
-        "gitbook": ">=4.0.0-alpha.0"
-    },
-    "devDependencies": {
-        "gitbook-plugin": "^4.0.0-alpha.4"
-    },
-    "scripts": {
-      "prepublish": "gitbook-plugin build ./src/index.js ./_assets/plugin.js"
+        "gitbook": ">=2.5.1"
     },
     "homepage": "https://github.com/GitbookIO/plugin-ga",
     "repository": {
@@ -28,11 +19,11 @@
         "properties": {
             "token": {
                 "type": "string",
-                "title": "Tracking ID",
+                "title": "Google Analytics Token",
                 "required": true
             },
             "configuration": {
-                "type": "string",
+                "type": [ "string", "object" ],
                 "title": "Configuration mode",
                 "default": "auto"
             }
