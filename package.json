@@ -1,8 +1,8 @@
 {
-    "name": "gitbook-plugin-ga",
+    "name": "@aleen42/gitbook-plugin-ga",
     "description": "Google Analytics tracking for your gitbook",
     "main": "index.js",
-    "version": "2.0.0",
+    "version": "2.0.2-beta.0",
     "engines": {
         "gitbook": ">=2.5.1"
     },
@@ -19,13 +19,8 @@
         "properties": {
             "token": {
                 "type": "string",
-                "title": "Google Analytics Token",
+                "title": "the Google Analytics id",
                 "required": true
-            },
-            "configuration": {
-                "type": [ "string", "object" ],
-                "title": "Configuration mode",
-                "default": "auto"
             }
         }
     }
